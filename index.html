@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDe - школа программирования</title>
+  <meta name="description" content="Школа программирования для тех, кому нужны реальные навыки, а не просто сертификат">
+  <meta name="keyword" content="школа, программирование, обучение, практика">
+  <base target="_blank">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <!--     Разкомментировать для подключения карты, вместо Your_Key вставить ключ авторизации
+  <script src="https://api-maps.yandex.ru/3.0/?apikey=Your_Key&lang=ru_RU"></script>
+-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <script type="module" src="./js/index.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <div class="logo">
+          <a href="#" class="logo__link" aria-label="На главную страницу">
+            <img src="./img/logo.svg" width="64" height="25" alt="Логотип компании CoDe">
+          </a>
+        </div>
+
+        <nav class="header__nav nav" aria-label="Основная навигация">
+          <ul id="header-list" class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Чему вы&nbsp;научитесь</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Процесс обучения</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Стоимость</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакты</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Регистрация</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <a href="tel:+74993489396" class="contacts-phone" aria-label="Позвонить нам">
+            +7 (499) 348 93&nbsp;96
+          </a>
+        </div>
+
+        <button id="burger" class="burger" type="button">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="visually-hidden">Школа программирования CoDe</h1>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <article class="slide">
+                <div class="slide__content">
+                  <h2 class="slide__title">Школа <span id="swiper-title-accent">программирования</span><br> для тех,
+                    кому нужны реальные навыки, а&nbsp;не&nbsp;просто сертификат</h2>
+                  <p class="slide__text">Закажите звонок, и&nbsp;наш специалист свяжется с&nbsp;вами в&nbsp;ближайшее
+                    время
+                  </p>
+                  <button class="slide__button" type="button">
+                    <span>Заказать звонок</span>
+                    <img src="./img/arrow.svg" alt="" aria-hidden="true">
+                  </button>
+                </div>
+                <picture class="slide__img">
+                  <source media="(max-width: 1024px)" srcset="https://i.ibb.co/N6fmf5Hw/Layer-2.png" width="247"
+                    height="258">
+                  <source media="(max-width: 600px)" srcset="https://i.ibb.co/8n71tB1L/Layer-2-1.png" width="210"
+                    height="220">
+                  <img src="https://i.ibb.co/7dkPjJH3/Layer-2.png" width="307" height="320" alt="" aria-hidden="true">
+                </picture>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="slide">
+                <div class="slide__content">
+                  <h2 class="slide__title">Обучение<br> через практику</h2>
+                  <p class="slide__text">Всё, что вы&nbsp;узнали, вы&nbsp;тут&nbsp;же начинаете применять
+                    на&nbsp;практике.
+                    Вы&nbsp;сразу видите результаты своего труда.</p>
+                  <button class="slide__button" type="button">
+                    <span>Заказать звонок</span>
+                    <img src="./img/arrow.svg" alt="" aria-hidden="true">
+                  </button>
+                </div>
+                <picture class="slide__img">
+                  <source media="(max-width: 1024px)" srcset="https://i.ibb.co/HLfCCSVv/Group-1175.png" width="297"
+                    height="258">
+                  <source media="(max-width: 600px)" srcset="https://i.ibb.co/23Bw9Z4M/Group-1175.png" width="259"
+                    height="220">
+                  <img src="https://i.ibb.co/zTCBPWsC/Group-1175-1.png" width="370" height="320" alt=""
+                    aria-hidden="true">
+                </picture>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="slide">
+                <div class="slide__content">
+                  <h2 class="slide__title">Весь материал разбит на&nbsp;небольшие уроки</h2>
+                  <p class="slide__text">Теория и&nbsp;практика подаются маленькими порциями. Так вам будет легче
+                    усваивать
+                    новые знания.</p>
+                  <button class="slide__button" type="button">
+                    <span>Заказать звонок</span>
+                    <img src="./img/arrow.svg" alt="" aria-hidden="true">
+                  </button>
+                </div>
+                <picture class="slide__img">
+                  <source media="(max-width: 1024px)" srcset="https://i.ibb.co/W1bXs71/Group-1231.png" width="302"
+                    height="257">
+                  <source media="(max-width: 600px)" srcset="https://i.ibb.co/ZzPDZwxJ/Group-1231.png" width="264"
+                    height="220">
+                  <img src="https://i.ibb.co/5fgnKnj/Group-1231.png" width="377" height="320" alt="" aria-hidden="true">
+                </picture>
+              </article>
+            </div>
+
+          </div>
+
+          <div class="swiper-button-prev">
+            <img src="./img/arrow-left.svg" alt="" aria-hidden="true">
+          </div>
+          <div class="swiper-button-next">
+            <img src="./img/arrow-right.svg" alt="" aria-hidden="true">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="learning-benefits" id="learning-benefits">
+      <div class="container">
+        <h2 class="learning-benefits__title">Обучение в&nbsp;CoDe&nbsp;&mdash; это<br> удобно и&nbsp;результативно</h2>
+
+        <div class="learning-benefits__cards cards">
+          <ul class="cards__list list-reset">
+            <li class="cards__item">
+              <div class="cards__img">
+                <img src="./img/svg-gobbler-1.svg" width="58" height="58" alt="" aria-hidden="true">
+              </div>
+              <div class="cards__text-content">
+                <h3 class="cards__title">Огромное количество практики</h3>
+                <p class="cards__text">Более 500 самостоятельных заданий и&nbsp;20&nbsp;полноценных больших проектов</p>
+              </div>
+            </li>
+            <li class="cards__item">
+              <div class="cards__img">
+                <img src="./img/svg-gobbler-2.svg" width="59" height="59" alt="" aria-hidden="true">
+              </div>
+              <div class="cards__text-content">
+                <h3 class="cards__title">Современные методики обучения</h3>
+                <p class="cards__text">Спиральное обучение: погружаемся в&nbsp;материал постепенно, виток за&nbsp;витком
+                </p>
+              </div>
+            </li>
+            <li class="cards__item">
+              <div class="cards__img">
+                <img src="./img/svg-gobbler-3.svg" width="70" height="61" alt="" aria-hidden="true">
+              </div>
+              <div class="cards__text-content">
+                <h3 class="cards__title">Простое и&nbsp;понятное изложение</h3>
+                <p class="cards__text">Вместо заумных терминов&nbsp;&mdash; примеры из&nbsp;реального мира</p>
+              </div>
+            </li>
+            <li class="cards__item">
+              <div class="cards__img">
+                <img src="./img/svg-gobbler-4.svg" width="72" height="72" alt="" aria-hidden="true">
+              </div>
+              <div class="cards__text-content">
+                <h3 class="cards__title">Гибкий график занятий</h3>
+                <p class="cards__text">Учитесь в&nbsp;любое время в&nbsp;удобном для вас темпе</p>
+              </div>
+            </li>
+            <li class="cards__item">
+              <div class="cards__img">
+                <img src="./img/svg-gobbler-5.svg" width="63" height="57" alt="" aria-hidden="true">
+              </div>
+              <div class="cards__text-content">
+                <h3 class="cards__title">Прямая связь с опытными программистами</h3>
+                <p class="cards__text">Задавайте вопросы и&nbsp;отправляйте свой код на&nbsp;проверку</p>
+              </div>
+            </li>
+            <li class="cards__item">
+              <div class="cards__img">
+                <img src="./img/svg-gobbler-6.svg" width="59" height="59" alt="" aria-hidden="true">
+              </div>
+              <div class="cards__text-content">
+                <h3 class="cards__title">Оплата небольшими частями</h3>
+                <p class="cards__text">Платите только за&nbsp;тот материал, который сейчас изучаете,
+                  а&nbsp;не&nbsp;за&nbsp;весь курс сразу</p>
+              </div>
+            </li>
+            <li class="cards__item">
+              <div class="cards__img">
+                <img src="./img/svg-gobbler-7.svg" width="51" height="60" alt="" aria-hidden="true">
+              </div>
+              <div class="cards__text-content">
+                <h3 class="cards__title">Быстрый и&nbsp;легкий возврат</h3>
+                <p class="cards__text">Если передумаете учиться&nbsp;&mdash; вернем деньги за&nbsp;3&nbsp;рабочих дня
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="learning-benefits__info info">
+          <div class="info__content">
+            <picture class="info__picture">
+              <source media="(max-width: 1024px)" srcset="https://i.ibb.co/5x40Q4JL/Group-1186.png" width="318"
+                height="251">
+              <source media="(max-width: 600px)" srcset="https://i.ibb.co/Q7W1mGg8/Rectangle-302-1.png.png" width="300"
+                height="234">
+              <img src="https://i.ibb.co/wDX5Pc0/Rectangle-302.png" width="397" height="313" alt="" aria-hidden="true">
+            </picture>
+            <div class="info__text-content">
+              <h3 class="info__title">Помощь и&nbsp;поддержка</h3>
+              <p class="info__text">Если в&nbsp;процессе обучения возникнут сложности, вы&nbsp;всегда сможете задать
+                вопрос своему
+                наставнику.</p>
+              <p class="info__text">Раз в&nbsp;несколько уроков вы&nbsp;будете получать большое задание, которое нужно
+                будет сдавать
+                на&nbsp;проверку код-ревьюеру.
+                Он&nbsp;внимательно изучит ваш код, найдет ошибки и&nbsp;поможет вам стать лучше.</p>
+            </div>
+          </div>
+
+          <div class="info__content">
+            <picture class="info__picture">
+              <source media="(max-width: 1024px)" srcset="https://i.ibb.co/LzYXxJx3/Group-1243.png" width="302"
+                height="257">
+              <source media="(max-width: 600px)" srcset="https://i.ibb.co/DXhdyFW/Rectangle-302-2.png" width="300"
+                height="243">
+              <img src="https://i.ibb.co/Mk6HSNST/Rectangle-302-3.png.png" width="398" height="290" alt=""
+                aria-hidden="true">
+            </picture>
+            <div class="info__text-content">
+              <h3 class="info__title">Методика обучения</h3>
+              <p class="info__text">Весь учебный материал структурирован по&nbsp;принципу &laquo;спирального
+                обучения&raquo;.
+                Сначала вы&nbsp;получаете базовые знания, а&nbsp;затем на&nbsp;каждом витке спирали углубляетесь
+                в&nbsp;изученные темы, доводя их&nbsp;понимание до&nbsp;совершенства.
+                Такой подход упрощает обучение и&nbsp;гарантирует, что вы&nbsp;не&nbsp;пропустите ничего важного.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="visually-hidden">Галлерея</h2>
+        <div class="gallery__grid">
+          <a href="https://i.ibb.co/1JhnNbvK/91dd38118d677f0dd22720deafb2af3568c6b95d.png" data-fancybox="gallery"
+            class="gallery__item">
+            <picture class="gallery__picture">
+              <source media="(max-width: 600px)" srcset="https://i.ibb.co/WNMjt2NY/g1.png" width="300" height="300">
+              <img src="https://i.ibb.co/P3P85mH/g1.jpg" width="571" height="571" class="gallery__img" alt=""
+                aria-hidden="true">
+            </picture>
+          </a>
+          <a href="https://i.ibb.co/V00nbVjw/8a747f70a3d527d623ed47011c79df5e8c13d44a.png" data-fancybox="gallery"
+            class="gallery__item">
+            <picture class="gallery__picture">
+              <source media="(max-width: 600px)" srcset="https://i.ibb.co/VY88gPCj/g2-min.png" width="145" height="145">
+              <img src="https://i.ibb.co/NggMV48K/g2.png" width="276" height="276" class="gallery__img" alt=""
+                aria-hidden="true">
+            </picture>
+          </a>
+          <a href="https://i.ibb.co/ZpvYy1CH/6b2115d5d16d07d3847c513aa9d55f93dbb13a84.png" data-fancybox="gallery"
+            class="gallery__item">
+            <picture class="gallery__picture">
+              <source media="(max-width: 600px)" srcset="https://i.ibb.co/pjrbrZ6C/g3-min.png" width="145" height="145">
+              <img src="https://i.ibb.co/DDTQZGMc/g3.png" width="276" height="276" class="gallery__img" alt=""
+                aria-hidden="true">
+            </picture>
+          </a>
+          <a href="https://i.ibb.co/nsX5nJ8p/93d5ab9ffd067c8d96db0a0997764283c65dcb7a.png" data-fancybox="gallery"
+            class="gallery__item">
+            <picture class="gallery__picture">
+              <source media="(max-width: 600px)" srcset="https://i.ibb.co/hxQ8rPsY/g4-min.png" width="145" height="145">
+              <img src="https://i.ibb.co/239LxB6h/g4.png" width="276" height="276" class="gallery__img" alt=""
+                aria-hidden="true">
+            </picture>
+          </a>
+          <a href="https://i.ibb.co/Hpdyz160/0e2bd0006f0aec5c38335263cf04786a2d986868.png" data-fancybox="gallery"
+            class="gallery__item">
+            <picture class="gallery__picture">
+              <source media="(max-width: 600px)" srcset="https://i.ibb.co/6c1QSvNW/g5-min.png" width="145" height="145">
+              <img src="https://i.ibb.co/v4NgFMyC/g5.png" width="276" height="276" class="gallery__img" alt=""
+                aria-hidden="true">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="map" id="contacts">
+      <h2 class="visually-hidden">Карта</h2>
+      <div class="container">
+        <div class="map__container" id="map" style="width: 100%; height: 423px;">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__logo-and-social">
+          <div class="logo">
+            <a href="#" class="logo__link" aria-label="На главную страницу">
+              <img src="./img/logo.svg" width="96" height="38" alt="Логотип компании CoDe">
+            </a>
+            <span class="logo__name">Школа<br> программирования</span>
+          </div>
+          <ul class="social list-reset" aria-label="Социальные сети">
+            <li><a href="#" class="social__link" aria-label="Наш Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none">
+                  <g clip-path="url(#a)">
+                    <path fill="#22253B"
+                      d="M34.888 17.437c0 9.63-7.807 17.437-17.437 17.437S.014 27.067.014 17.437 7.82 0 17.45 0s17.437 7.807 17.437 17.437Z" />
+                    <path fill="#fff"
+                      d="M21.4 8.686h-8.188A4.839 4.839 0 0 0 8.38 13.52v8.188a4.839 4.839 0 0 0 4.833 4.834h8.19a4.839 4.839 0 0 0 4.832-4.834V13.52a4.839 4.839 0 0 0-4.833-4.834Zm-4.093 13.81a4.888 4.888 0 0 1-4.883-4.882 4.888 4.888 0 0 1 4.883-4.882 4.888 4.888 0 0 1 4.882 4.882 4.888 4.888 0 0 1-4.883 4.882Zm4.998-8.613a1.444 1.444 0 0 1-1.442-1.442c0-.796.647-1.443 1.442-1.443.796 0 1.443.647 1.443 1.443 0 .795-.647 1.442-1.443 1.442Z" />
+                    <path fill="#fff"
+                      d="M17.306 13.779a3.84 3.84 0 0 0-3.835 3.835 3.84 3.84 0 0 0 3.835 3.836 3.84 3.84 0 0 0 3.835-3.836 3.84 3.84 0 0 0-3.835-3.835ZM22.306 12.044a.396.396 0 1 0 .001.793.396.396 0 0 0-.001-.793Z" />
+                  </g>
+                </svg>
+              </a></li>
+            <li><a href="#" class="social__link" aria-label="Наша страница ВКонтакте">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none">
+                  <g clip-path="url(#a)">
+                    <path fill="#22253B"
+                      d="M34.874 17.437c0 9.63-7.807 17.437-17.437 17.437S0 27.067 0 17.437 7.807 0 17.437 0s17.437 7.807 17.437 17.437Z" />
+                    <path fill="#fff" fill-rule="evenodd"
+                      d="M16.85 22.958h1.115s.337-.037.51-.222c.158-.17.153-.489.153-.489s-.022-1.492.672-1.712c.685-.216 1.564 1.443 2.496 2.08.705.483 1.24.378 1.24.378l2.492-.035s1.304-.08.686-1.102c-.05-.084-.36-.757-1.853-2.139-1.562-1.446-1.353-1.212.529-3.714 1.146-1.524 1.605-2.454 1.461-2.852-.136-.38-.98-.28-.98-.28l-2.805.018s-.208-.028-.362.064c-.15.09-.248.3-.248.3s-.444 1.18-1.036 2.182c-1.25 2.116-1.75 2.228-1.953 2.096-.475-.306-.357-1.23-.357-1.886 0-2.05.312-2.906-.607-3.127-.305-.074-.53-.122-1.31-.13-1-.01-1.848.003-2.328.238-.319.155-.565.503-.415.523.186.025.606.113.828.415.288.39.278 1.267.278 1.267s.165 2.413-.386 2.713c-.378.206-.897-.214-2.011-2.134a17.826 17.826 0 0 1-1.002-2.07s-.083-.203-.23-.312c-.18-.131-.432-.173-.432-.173l-2.666.017s-.4.011-.547.185c-.131.154-.01.474-.01.474s2.087 4.87 4.45 7.324c2.167 2.25 4.628 2.103 4.628 2.103Z"
+                      clip-rule="evenodd" />
+                  </g>
+                </svg>
+              </a></li>
+            <li><a href="#" class="social__link" aria-label="Наша страница на Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none">
+                  <g clip-path="url(#a)">
+                    <path fill="#22253B"
+                      d="M34.888 17.437c0 9.63-7.807 17.437-17.437 17.437S.014 27.067.014 17.437 7.82 0 17.45 0s17.437 7.807 17.437 17.437Z" />
+                    <path fill="#fff"
+                      d="M19.22 12.913h2.025v-2.94h-2.381v.011c-2.886.1-3.478 1.694-3.53 3.367h-.006v1.468h-1.965v2.88h1.965v7.717h2.962v-7.718h2.426l.468-2.879h-2.893v-.887c0-.565.383-1.019.928-1.019Z" />
+                  </g>
+                </svg>
+              </a></li>
+            <li><a href="#" class="social__link" aria-label="Наш YouTube канал">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none">
+                  <g clip-path="url(#a)">
+                    <path fill="#22253B"
+                      d="M34.94 17.463c0 9.645-7.819 17.463-17.463 17.463-9.645 0-17.463-7.818-17.463-17.463C.014 7.82 7.832 0 17.477 0 27.12 0 34.94 7.819 34.94 17.463Z" />
+                    <path fill="#fff"
+                      d="M26.474 11.67c-.71-.844-2.02-1.188-4.52-1.188h-9.081c-2.56 0-3.891.367-4.598 1.264-.69.876-.69 2.166-.69 3.951V19.1c0 3.458.819 5.214 5.288 5.214h9.08c2.17 0 3.372-.303 4.15-1.048.797-.763 1.137-2.01 1.137-4.166v-3.403c0-1.883-.053-3.18-.766-4.027Zm-6.27 6.198-4.123 2.155a.633.633 0 0 1-.928-.562v-4.296a.634.634 0 0 1 .926-.563l4.123 2.142a.634.634 0 0 1 .002 1.124Z" />
+                  </g>
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <nav class="nav" aria-label="Дополнительная навигация">
+            <ul class="nav__list list-reset">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Чему вы&nbsp;научитесь</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Процесс обучения</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Стоимость</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Регистрация</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__contacts contacts">
+          <a href="tel:+74993489396" class="contacts-phone" aria-label="Позвонить нам">
+            +7 (499) 348 93&nbsp;96
+          </a>
+          <a href="mailto:info@code.ru" class="contacts-mail" aria-label="Написать нам">
+            info@code.ru
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span class="copyright">&copy;&nbsp;2023&nbsp;&mdash; Все права защищены</span>
+        <a href="#" class="legal-links">Пользовательское соглашение</a>
+        <a href="#" class="legal-links">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="overlay" class="overlay"></div>
+  <div id="popup" class="popup" role="dialog" aria-modal="true">
+    <form action="#" id="popup-form" class="form" aria-label="Форма обратной связи">
+      <h3 class="form__title">Заказать звонок</h3>
+      <label for="input-name" class="form__label">Имя
+        <input id="input-name" class="form__input" type="text" name="name" placeholder="ваше имя" data-required>
+        <span id="error-name" class="form__error"></span>
+      </label>
+
+      <label for="input-tel" class="form__label">Телефон
+        <input id="input-tel" class="form__input" type="tel" name="tel" placeholder="+7 XXX - XXX - XX - XX"
+          data-required>
+        <span id="error-tel" class="form__error"></span>
+      </label>
+
+      <label for="input-email" class="form__label">Email
+        <input id="input-email" class="form__input" type="text" name="email" placeholder="mail@site.com" data-required>
+        <span id="error-email" class="form__error"></span>
+      </label>
+
+      <label for="input-message" class="form__label">Сообщение
+        <textarea id="input-message" class="form__textarea" name="message" placeholder="Ваше сообщение ..."></textarea>
+      </label>
+
+      <p class="form__info">Нажимая кнопку &laquo;Отправить&raquo;, соглашаюсь с&nbsp;<a href="#">политикой
+          конфидениальности</a></p>
+      <button class="form__button" type="submit" data-last-element>
+        <span>Отправить</span>
+        <img src="./img/arrow.svg" alt="" aria-hidden="true">
+      </button>
+    </form>
+
+  </div>
+</body>
+
+</html>
